@@ -7,4 +7,4 @@ Mir ist noch nicht ganz klar, ob dies über ein virtueller Chat stattfindet oder
 
 
 Diagramm dazu:
-![Diagramm zum Aufbau der Website](Aufbau_website.jpeg "Bildtitel")
+![Diagramm zum Aufbau der Website](https://github.com/selmafederl/prog2/blob/master/diagramm_website.jpg "Bildtitel")
