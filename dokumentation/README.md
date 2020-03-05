@@ -8,7 +8,7 @@ Mir ist noch nicht ganz klar, ob dies über ein virtueller Chat stattfindet oder
 
 2. Diagramm dazu:
 
-![Diagramm zum Aufbau der Website](https://github.com/selmafederl/prog2/blob/master/diagramm_website.jpg "Diagramm Website")
+![Diagramm zum Aufbau der Website](https://github.com/selmafederl/prog2/blob/master/dokumentation/diagramm_website.jpg "Diagramm Website")
 
 2.1 Notizen zum Diagramm:
 
