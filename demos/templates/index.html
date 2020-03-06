@@ -5,8 +5,22 @@
 		<title>Hello</title>
 		<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
 	</head>
-	<body>
-		<h1>Hallo {{ name }}!</h1>
-		<a href="{{ url_for('test')}}">Test</a>
+	<body class="background">
+		
+    <div class="begruessung">
+			<h1>Herzlich Willkommen!</h1>
+		<p>Hier kannst du alles über dein Sternzeichen herausfinden. Dein passendes Tierkreiszeichen oder ob dein Partner und du wirklich für einander geschaffen seid.</p>
+
+		<a href="{{ url_for('test')}}">Sternzeichen</a>
+
+		<form method="POST">
+    		<input type="text" name="vorname" placeholder="Bitte geben Sie Ihren Namen ein"> #bei type könnte man auch "checkbox" nehmen, um etwas anzukreuzen
+    		<button type="submit">Senden</button>
+		</form>
+		</div>
+
+
+		
+
 	</body>
 </html>

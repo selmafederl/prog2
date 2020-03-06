@@ -1,3 +1,29 @@
 h1 {
-  color: green;
+	font-size: 70pt
+}
+
+body {
+	font-family: calibri
+}
+
+.background {
+	background-color: pink;
+	width: 100%;
+	height: 100%;
+	padding-top:0pt;
+}
+
+
+.begruessung {
+	color: white;
+	text-align: center;
+	height: 250pt;
+	background-color: red;
+	font-size: 20pt;
+	padding-left: 50pt;
+	padding-right: 50pt;
+	padding-top: 
+	margin-top:0pt;
+
+
 }
