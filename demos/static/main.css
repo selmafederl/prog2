@@ -27,3 +27,14 @@ body {
 
 
 }
+
+.formularbox {
+	text-align: center;
+	background-color: lightgreen;
+}
+
+.formular {
+	background-color: orange;
+	width: 500px;
+	margin-left: 455px;
+}

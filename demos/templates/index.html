@@ -9,14 +9,11 @@
 		
     <div class="begruessung">
 			<h1>Herzlich Willkommen!</h1>
-		<p>Hier kannst du alles über dein Sternzeichen herausfinden. Dein passendes Tierkreiszeichen oder ob dein Partner und du wirklich für einander geschaffen seid.</p>
+		<p>Hier kannst du alles über dein Sternzeichen herausfinden. Dein passendes Tierkreiszeichen oder ob dein Partner und du wirklich für einander geschaffen seid. Du kannst hier unten entscheiden, ob du eine Lister aller Sternzeichen sehen möchtest und dein Strernzeihen selber raussuchen oder du kannst mit Hife eines Formulars das passende Sterneichen von dir und evtl. auch von deinem Partner berechnen lassen.</p>
 
-		<a href="{{ url_for('test')}}">Sternzeichen</a>
+		<a href="{{ url_for('sternzeichen_seite')}}">Sternzeichen</a>
 
-		<form method="POST">
-    		<input type="text" name="vorname" placeholder="Bitte geben Sie Ihren Namen ein"> #bei type könnte man auch "checkbox" nehmen, um etwas anzukreuzen
-    		<button type="submit">Senden</button>
-		</form>
+	<a href="{{ url_for('formular')}}">Persönliche Abfrage</a>
 		</div>
 
 

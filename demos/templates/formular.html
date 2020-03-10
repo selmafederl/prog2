@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<title>Formular</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+	</head>
+	<body>
+		<div class="formularbox">
+		<h2>Formular</h2>
+
+	<p>Füllen Sie hier ihre Daten ein:</p>
+<div class="formular">
+	<form method="POST">
+    		<p>Bitte gebe deinen Namen ein:</p>
+    		<input type="text" name="vorname" placeholder="z.B.: Selma"> <br>
+    		<p>Bitte gebe dein Geburtsmonat ein:</p>
+       		<input type="text" name="monat" placeholder="z.B.: Januar"><br>
+       		<p>Bitte gebe dein Geburtstag ein:</p>
+    		<input type="text" name="tag" placeholder="z.B.: 2"><br>
+    		<button type="submit">Senden</button>
+		</form>
+</div>
+</div>
+
+	</body>
+</html>
