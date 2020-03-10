@@ -6,9 +6,9 @@ Der Nutzer kann entscheiden, ob er entweder sein Geburtsdatum und Geschlecht ang
 Mir ist noch nicht ganz klar, ob dies über ein virtueller Chat stattfindet oder einfach eine Ein- und Ausgabe ist, aber das werden wir wahrscheinlich im Laufe des Semester lernen und je nach dem werde ich mich für eine Methode entscheiden.
 
 
-2. Diagramm dazu:
+2. Prototy 1 des Diagramms:
 
-![Diagramm zum Aufbau der Website](https://github.com/selmafederl/prog2/blob/master/dokumentation/diagramm_website.jpg "Diagramm Website")
+![Diagramm zum Aufbau der Website](https://github.com/selmafederl/prog2/blob/master/dokumentation/diagramm_website.jpg "Diagramm 1 Website")
 
 2.1 Notizen zum Diagramm:
 
@@ -37,4 +37,10 @@ Daraufhin soll im Chat nochmals die Frage kommen, ob der Benutzer noch etwas wis
 Ist das Erstellen eines Chats mit unserem Wissensstand möglich?
 Wie wird sich das Chatfenster öffnen? Neues Fenster? Oder ist ein kleiner Chat auf der rechten Seite möglich ohne dass die Seite verlassen wird?
 Wenn der Link zur Antwort (neue Seite) geöffnet wird kann der Chat mit auf die neue Seite "genommen" werden? 
+
+4. Beantwortung der offenen Fragen:
+Das Erstellen des Chat-Fensters ist im Rahmen des Unterrichts nicht möglich. Nach Absprache mit Herr Odoni wäre das Anwenden eines Formulars sinnvoller und auch machbarer.
+
+Weiteres Vorgehen:
+- Überarbeiten des Diagramms
 
