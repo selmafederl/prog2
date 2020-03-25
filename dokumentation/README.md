@@ -44,3 +44,6 @@ Das Erstellen des Chat-Fensters ist im Rahmen des Unterrichts nicht möglich. Na
 Weiteres Vorgehen:
 - Überarbeiten des Diagramms
 
+5. Überarbeitetes Diagramm:
+
+![Diagramm zum Aufbau der Website](https://github.com/selmafederl/prog2/blob/master/dokumentation/diagramm2.jpg "Diagramm 2 Website")
