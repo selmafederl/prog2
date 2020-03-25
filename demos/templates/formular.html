@@ -7,17 +7,19 @@
 	</head>
 	<body>
 		<div class="formularbox">
+
 		<h2>Formular</h2>
 
 	<p>Füllen Sie hier ihre Daten ein:</p>
 <div class="formular">
-	<form method="POST">
+	<form method="POST"> <!-- Mit POST übermittelt man die Daten an das Flask -->
     		<p>Bitte gebe deinen Namen ein:</p>
-    		<input type="text" name="vorname" placeholder="z.B.: Selma"> <br>
+    		<input type="text" name="vorname" placeholder="z.B.: Selma"> <br> <!-- in der python datei habe ich eine route erstellt, welche nach dem Enter geöffnet wird mit der Ansprache des Namen - hier sollte dann das Ergebnis mit Sternzeichen stehen -->
     		<p>Bitte gebe dein Geburtsmonat ein:</p>
        		<input type="text" name="monat" placeholder="z.B.: Januar"><br>
        		<p>Bitte gebe dein Geburtstag ein:</p>
     		<input type="text" name="tag" placeholder="z.B.: 2"><br>
+            <!-- hier evtl. noch Abfrage des Partners -->
     		<button type="submit">Senden</button>
 		</form>
 </div>

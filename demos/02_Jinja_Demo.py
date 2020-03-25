@@ -20,8 +20,9 @@ def test():
 	if request.method == "POST":
 		vorname = request.form["vorname"]
 		return "Hallo " + vorname
+        #Hier müsste dann auch das Ergebnis des Formulars rauskommen - Sternzeichen etc
 	return render_template('formular.html')
-#
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
