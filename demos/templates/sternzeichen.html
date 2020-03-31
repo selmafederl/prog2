@@ -1,4 +1,34 @@
 {% include "header.html" %}
 	<body>
 		<h2>Sternzeichen</h2>
+
+<ul>
+        <h3>Feuerzeichen</h3>
+        {% for zeichen_eins in feuer %}
+            <li>{{ zeichen_eins }}</li>
+        {% endfor %}
+    </ul>
+
+<ul>
+        <h3>Erdezeichen</h3>
+        {% for zeichen_zwei in erde %}
+            <li>{{ zeichen_zwei }}</li>
+        {% endfor %}
+    </ul>
+
+<ul>
+        <h3>Luftzeichen</h3>
+        {% for zeichen_drei in luft %}
+            <li>{{ zeichen_drei }}</li>
+        {% endfor %}
+    </ul>
+
+<ul>
+        <h3>Wasserzeichen</h3>
+        {% for zeichen_vier in wasser %}
+            <li>{{ zeichen_vier }}</li>
+        {% endfor %}
+    </ul>
+
+
 {% include "footer.html" %}

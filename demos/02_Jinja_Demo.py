@@ -23,6 +23,14 @@ def test():
         #Hier müsste dann auch das Ergebnis des Formulars rauskommen - Sternzeichen etc
 	return render_template('formular.html')
 
+@app.route("/sternzeichen")
+def jinja1():
+    feuer = ["Widder", "Löwe", "Schütze"]
+    erde = ["Stier", "Jungfrau", "Steinbock"]
+    luft = ["Zwilling", "Waage", "Wassermann"]
+    wasser = ["Skorpion", "Fisch", "Krebs"]
+    return render_template("sternzeichen.html", feuer=feuer, erde=erde, luft=luft, wasser=wasser)
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
