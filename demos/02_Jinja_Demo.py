@@ -5,11 +5,17 @@ app = Flask("Hello World")
 
 @app.route('/hello')
 def hello_world():
-	return render_template('index.html')
+    return render_template('index.html')
 
-@app.route("/test")
+@app.route("/sternzeichen")
 def sternzeichen_seite():
     return render_template("sternzeichen.html") #hier könnte man eine zweite Seite verlinken, um so auf die nächste Seite zu kommen
+def jinja1(): #funktioniert irgendwie nicht.. Wieso?
+    feuer = ["Widder", "Löwe", "Schütze"]
+    erde = ["Stier", "Jungfrau", "Steinbock"]
+    luft = ["Zwilling", "Waage", "Wassermann"]
+    wasser = ["Skorpion", "Fisch", "Krebs"]
+    return render_template("sternzeichen.html", feuer=feuer, erde=erde, luft=luft, wasser=wasser)
 
 @app.route("/formular")
 def formular():
@@ -17,19 +23,12 @@ def formular():
 
 @app.route('/formular', methods=["GET", "POST"])
 def test():
-	if request.method == "POST":
-		vorname = request.form["vorname"]
-		return "Hallo " + vorname
+    if request.method == "POST":
+        vorname = request.form["vorname"]
+        return "Hallo " + vorname
         #Hier müsste dann auch das Ergebnis des Formulars rauskommen - Sternzeichen etc
-	return render_template('formular.html')
+    return render_template('formular.html')
 
-@app.route("/sternzeichen")
-def jinja1():
-    feuer = ["Widder", "Löwe", "Schütze"]
-    erde = ["Stier", "Jungfrau", "Steinbock"]
-    luft = ["Zwilling", "Waage", "Wassermann"]
-    wasser = ["Skorpion", "Fisch", "Krebs"]
-    return render_template("sternzeichen.html", feuer=feuer, erde=erde, luft=luft, wasser=wasser)
 
 
 if __name__ == "__main__":
