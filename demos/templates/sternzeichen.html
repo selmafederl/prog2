@@ -2,8 +2,9 @@
     <body>
         <h2>Sternzeichen</h2>
 
+    <a href="{{ url_for('feuerzeichen')}}">Feuerzeichen</a>
 <ul>
-        <h3>Feuerzeichen</h3>
+       
         {% for zeichen_eins in feuer %}
             <li>{{ zeichen_eins }}</li>
         {% endfor %}
