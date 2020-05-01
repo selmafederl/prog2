@@ -32,7 +32,7 @@ def test():
     if request.method == "POST":
         vorname = request.form["vorname"]
         return "Hallo " + vorname
-        #Hier müsste dann auch das Ergebnis des Formulars rauskommen - Sternzeichen etc
+        #Hier müsste dann auch das Ergebnis des Formulars rauskommen - Sternzeichen etc aber Programmierung noch nicht so weit
     return render_template('formular.html')
 
 

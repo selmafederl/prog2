@@ -35,3 +35,25 @@ body {
 	width: 500px;
 	margin-left: 455px;
 }
+
+footer {
+    margin-top: 0%;
+    margin-bottom: 0rem;
+    padding-bottom: 2.1rem;
+    padding-top: 2.1rem;
+    background-color: rosybrown;
+    opacity: 0.9;
+    color: white;
+}
+
+.kontaktdaten {
+    text-align:center;
+}
+
+.kontaktdaten a, .kontaktdaten h3 {
+    color: white;
+}
+
+.kontaktdaten a:hover {
+    color: dimgray!important;
+}
