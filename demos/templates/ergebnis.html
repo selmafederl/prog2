@@ -1,0 +1,27 @@
+{% include "header.html" %}
+<div class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="card text-center">
+          <div class="card-header">
+            <h2>Ergebnis deiner Eingaben</h2>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title mb-4 mt-4">Hallo {{ vorname }}</h3>
+            <h4 class="card-text mb-5">
+              Dein Sternzeichen ist: <strong>{{sternzeichen}}</strong>
+            </h4>
+            <a class="btn btn-primary" href="{{ url_for('formular')}}"
+              >Neue Abfrage</a
+            >
+          </div>
+          <div class="card-footer text-muted">
+            Alle Angeben ohne Gewähr
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% include "footer.html" %}

@@ -1,21 +1,51 @@
 {% include "header.html" %}
-	<body>
-		<div class="formularbox">
+<div class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="mb-5">Erfahre dein Sternzeichen</h2>
 
-		<h2>Formular</h2>
+        <div class="formular">
+          <form method="POST">
+            <!-- Mit POST übermittelt man die Daten an das Flask -->
 
-	<p>Füllen Sie hier ihre Daten ein:</p>
-<div class="formular">
-	<form method="POST"> <!-- Mit POST übermittelt man die Daten an das Flask -->
-    		<p>Bitte gebe deinen Namen ein:</p>
-    		<input type="text" name="vorname" placeholder="z.B.: Selma"> <br> <!-- in der python datei habe ich eine route erstellt, welche nach dem Enter geöffnet wird mit der Ansprache des Namen - hier sollte dann das Ergebnis mit Sternzeichen stehen -->
-    		<p>Bitte gebe dein Geburtsmonat ein:</p>
-       		<input type="text" name="monat" placeholder="z.B.: Januar"><br>
-       		<p>Bitte gebe dein Geburtstag ein:</p>
-    		<input type="text" name="tag" placeholder="z.B.: 2"><br>
+            <div class="form-group">
+              <label for="vorname">Bitte gib deinen Namen ein:</label
+              ><input
+                class="form-control"
+                type="text"
+                name="vorname"
+                id="vorname"
+                placeholder="z.B.: Selma"
+              />
+            </div>
+            <div class="form-group">
+              <label for="monat">Bitte gib deinen Geburtsmonat ein:</label
+              ><input
+                class="form-control"
+                type="text"
+                name="monat"
+                id="monat"
+                placeholder="z.B.: Januar"
+              />
+            </div>
+            <div class="form-group">
+              <label for="tag">Bitte gib deinen Geburtstag ein:</label
+              ><input
+                class="form-control"
+                type="text"
+                name="tag"
+                id="tag"
+                placeholder="z.B.: 11"
+              />
+            </div>
+
             <!-- hier evtl. noch Abfrage des Partners -->
-    		<button type="submit">Senden</button>
-		</form>
-</div>
+            <button type="submit" class="btn btn-primary">Senden</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 {% include "footer.html" %}

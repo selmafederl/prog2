@@ -1,35 +1,40 @@
 {% include "header.html" %}
-    <body>
-        <h2>Sternzeichen</h2>
 
-    <a href="{{ url_for('feuerzeichen')}}">Feuerzeichen</a>
-<ul>
-       
-        {% for zeichen_eins in feuer %}
-            <li>{{ zeichen_eins }}</li>
-        {% endfor %}
-    </ul>
+<div class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="mb-5">Sternzeichen</h2>
 
-<ul>
-        <h3>Erdezeichen</h3>
-        {% for zeichen_zwei in erde %}
-            <li>{{ zeichen_zwei }}</li>
-        {% endfor %}
-    </ul>
+        <h4><a href="{{ url_for('feuerzeichen')}}">Feuerzeichen</a></h4>
+        <ul>
+          {% for Feuerzeichen in feuer %}
+          <li>{{ Feuerzeichen }}</li>
+          {% endfor %}
+        </ul>
 
-<ul>
-        <h3>Luftzeichen</h3>
-        {% for zeichen_drei in luft %}
-            <li>{{ zeichen_drei }}</li>
-        {% endfor %}
-    </ul>
+        <h4>Erdzeichen</h4>
+        <ul>
+          {% for Erdzeichen in erde %}
+          <li>{{ Erdzeichen }}</li>
+          {% endfor %}
+        </ul>
 
-<ul>
-        <h3>Wasserzeichen</h3>
-        {% for zeichen_vier in wasser %}
-            <li>{{ zeichen_vier }}</li>
-        {% endfor %}
-    </ul>
+        <h4>Luftzeichen</h4>
+        <ul>
+          {% for Luftzeichen in luft %}
+          <li>{{ Luftzeichen }}</li>
+          {% endfor %}
+        </ul>
 
-
+        <h4>Wasserzeichen</h4>
+        <ul>
+          {% for Wasserzeichen in wasser %}
+          <li>{{ Wasserzeichen }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 {% include "footer.html" %}
