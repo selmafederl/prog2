@@ -99,7 +99,7 @@ def test():
         elif monat == "Dezember" and int(tag) >= 22 or monat == "Januar" and int(tag) <= 20:
             sternzeichen = "Steinbock"
         else:
-            sternzeichen = "Sie sind zu blöd um Daten einzugeben"
+            sternzeichen = "Sie sind zu blöd, um Daten einzugeben"
 
         return render_template("ergebnis.html", vorname=vorname, monat=monat, tag=tag, sternzeichen=sternzeichen)
         # Hier müsste dann auch das Ergebnis des Formulars rauskommen - Sternzeichen etc aber Programmierung noch nicht so weit
