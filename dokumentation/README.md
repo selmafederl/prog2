@@ -39,7 +39,7 @@ Wie wird sich das Chatfenster öffnen? Neues Fenster? Oder ist ein kleiner Chat 
 Wenn der Link zur Antwort (neue Seite) geöffnet wird kann der Chat mit auf die neue Seite "genommen" werden? 
 
 4. Beantwortung der offenen Fragen:
-Das Erstellen des Chat-Fensters ist im Rahmen des Unterrichts nicht möglich. Nach Absprache mit Herr Odoni wäre das Anwenden eines Formulars sinnvoller und auch machbarer.
+Das Erstellen des Chat-Fensters ist im Rahmen des Unterrichts nicht möglich. Nach Absprache mit Herrn Odoni wäre das Anwenden eines Formulars sinnvoller und auch machbarer.
 
 Weiteres Vorgehen:
 - Überarbeiten des Diagramms
@@ -47,3 +47,15 @@ Weiteres Vorgehen:
 5. Überarbeitetes Diagramm:
 
 ![Diagramm zum Aufbau der Website](https://github.com/selmafederl/prog2/blob/master/dokumentation/diagramm2.jpg "Diagramm 2 Website")
+
+6. Abfrage nach dem Geburtstag
+Für die Abfrage des Geburtstags, um das richtige Sternzeichen auszugeben, wurde ein Formular erstellt, in dem der Nutzer nach seinem Namen, seinem Geburtstag und seinem Geburtsmonat gefragt wird. Gibt er die Daten richtig an, wird im das Sternzeichen angezeigt. Gibt er ein ungültiges Geburtsdatum ein bekommt er die Meldung, dass mit den angegebenen Daten kein passendes Sternzeichen gefunden werden konnte.
+
+Im Hintergrund wird eine if-Formel angewendet, in der aufgelistet wird, wann welches Sternzeichen angezeigt werden soll, dafür sind die Variabeln des Monats und der Zahl (des Geburtstags) wichtig. 
+
+Beispiel:
+Ist der Monat Januar und die Zahl grösser gleich 21 ODER der Monat Februar und die Zahl kleiner gleich 19, so sollte das Ergebnis Wassermann sein
+
+7. Gestaltung
+Die Website wurde mit Bootstrap-Paketen im Header ausgestattet und somit die Gestaltung für die Website gemacht
+
