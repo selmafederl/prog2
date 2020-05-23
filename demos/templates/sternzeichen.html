@@ -3,16 +3,16 @@
 <div class="main">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <h2 class="mb-5">Sternzeichen</h2>
-
+      <h2 class="mb-5 col-12">Sternzeichen</h2>
+      <div class="col-md-3">
         <h4><a href="{{ url_for('feuerzeichen')}}">Feuerzeichen</a></h4>
         <ul>
           {% for Feuerzeichen in feuer %}
           <li>{{ Feuerzeichen }}</li>
           {% endfor %}
         </ul>
-
+      </div>
+      <div class="col-md-3">
         <h4>Erdzeichen</h4>
         <ul>
           {% for Erdzeichen in erde %}
@@ -20,6 +20,8 @@
           {% endfor %}
         </ul>
 
+      </div>
+      <div class="col-md-3">
         <h4>Luftzeichen</h4>
         <ul>
           {% for Luftzeichen in luft %}
@@ -27,6 +29,8 @@
           {% endfor %}
         </ul>
 
+      </div>
+      <div class="col-md-3">
         <h4>Wasserzeichen</h4>
         <ul>
           {% for Wasserzeichen in wasser %}
