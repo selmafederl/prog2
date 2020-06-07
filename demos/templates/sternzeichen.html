@@ -7,8 +7,8 @@
       <div class="col-md-3">
         <h4><a href="{{ url_for('feuerzeichen')}}">Feuerzeichen</a></h4>
         <ul>
-          {% for Feuerzeichen in feuer %}
-          <li>{{ Feuerzeichen }}</li>
+          {% for Feuerzeichen in feuer %} {# Schleife (Prozent) durch das Array, um alle enthaltene Zeichen auszugeben #}
+          <li>{{ Feuerzeichen }}</li> {# Ausgabe für des Werts #}
           {% endfor %}
         </ul>
       </div>
