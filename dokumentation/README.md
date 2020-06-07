@@ -53,13 +53,21 @@ Für die Abfrage des Geburtstags, um das richtige Sternzeichen auszugeben, wurde
 
 6.1.1. Eingabe und Berechnung
 Für die Abfrage der Daten wird ein Formular genutzt, in dem über die Methode POST Daten eingegeben und an den Server geschickt werden können.
-Für die Berechnung des Sternzeichens wird eine if, elif Formel angewendet, in der die Werte von dem Monat und Tag genutzt werden, um das richtige Sternzeichen zu finden. Gibt der Nutzer etwas vollkommen anderes ein, so erhält er die Nachricht, dass kein Sternzeichen gefunden werden konnte und hat nochmals die Möglichkeit, seine Daten einzugeben.
+Für die Berechnung des Sternzeichens wird über def getSternzeichen eine if, elif Formel angewendet, in der die Werte von dem Monat und Tag genutzt werden, um das richtige Sternzeichen zu finden. Gibt der Nutzer etwas vollkommen (bspw. Butter) anderes ein, so erhält er die Nachricht, dass kein Sternzeichen gefunden werden konnte und hat nochmals die Möglichkeit, seine Daten einzugeben. Wenn er jedoch ausversehen eine Zahl an den Monat ranhängt (zb. Januar3), so wird über clearString der 3er aus dem Wort gelöscht und es kann normal über getSternzeichen, nach dem Wort (zb. Januar) und der eingegebenen Zahl nach dem Sternzeichen gefiltert werden. 
 
 Beispiel:
 Ist der Monat Januar und die Zahl grösser gleich 21 ODER der Monat Februar und die Zahl kleiner gleich 19, so sollte das Ergebnis Wassermann sein
 
-In einer Json.datei werden alle Eintragungen inkl. dem daraus berechneten Sternzeichen gespeichert. Gibt ein neuer Nutzer seine Daten ein, werden die Daten in Form eines Dict gespeichert und erkennt die bereits eingetragenen Einträge als dict und sucht Einträge mit dem selben Sternzeichen. Diese Namen werden inkl. Geburtstag dann ausgegeben + die Anzahl an Personen werden (mit der Funktion len()) angzeigt.
+In einer Json.datei werden alle Eintragungen inkl. dem daraus berechneten Sternzeichen gespeichert. Gibt ein neuer Nutzer seine Daten ein, werden die Daten in Form eines Dict gespeichert und json erkennt die bereits eingetragenen Einträge als dict und sucht Einträge mit dem selben Sternzeichen. Diese Namen werden inkl. Geburtstag dann ausgegeben + die Anzahl an Personen werden (mit der Funktion len()) angzeigt.
 Nach dem neuen Eintrag wird der alte Inhalt mit json.dump() mit dem neuen Inhalt ersetzt.
+
+Wurde das Sternzeichen erkannt so wird dieses in den Listen liFeuer, liErde, liLuft, liWasser gesucht und über getElement einem Element zugeordnet. das zugeordnete Element wird dann über def element() mit .lower() klein geschrieben und zusätzlich wird das Wort ".html" angehängt, damit das Ergebnis des Elements direkt die Element-Seite als Verklinkung anzeigt, damit der Nutzer daraufklicken kann und dann auf der Element-Seite über sein Element lesen kann.
+
+Neben dem Element wird auf der ergbnis.html auch die Verklinung des Sternzeichens angezeigt, so dass der Nutzer auch mehr über sein Sternzeichen erfahren kann.
+
+Zu dem ist es über die Verlinkung über den Button "Neue Abfrage" auf der ergebnis.html möglich, auf die URL des Formulars zurück zu greifen und nochmals eine Abfrage vornehmen.
+
+
 
 7. Gestaltung
 Die Website wurde mit Bootstrap-Paketen im Header ausgestattet und somit die Gestaltung für die Website gemacht
