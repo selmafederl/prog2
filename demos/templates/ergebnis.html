@@ -13,13 +13,22 @@
               Dein Sternzeichen ist: <strong>{{sternzeichen}}</strong>
             </h4>
             <h4 class="card-text mb-5">
-              Dein Element ist: <a
-                href="{{ url_for('element') }}?sternzeichen={{sternzeichen}}"><strong>{{element}}</strong></a>
+              Dein Element ist:
+              <a href="{{ url_for('element') }}?sternzeichen={{sternzeichen}}"
+                ><strong>{{element}}</strong></a
+              >
             </h4>
-            <a class="btn btn-primary" href="{{ url_for('formular') }}">Neue Abfrage</a>
+            <a class="btn btn-primary" href="{{ url_for('formular') }}" 
+              >Neue Abfrage</a> {# verlinkt auf die route /formular im jinja #}
           </div>
           <div class="card-footer text-muted">
-            Alle Angeben ohne Gewähr
+            <p>Personen mit gleichem Sternzeichen {{countData}}</p>
+            <h3>Folgende Personen sind auch {{sternzeichen}}</h3>
+            <ul>
+              {% for person in sameStarSign %}
+              <li>{{ person['vorname'] }} hat am {{ person['tag'] }} . {{ person['monat'] }} Geburtstag</li>
+              {% endfor %}
+            </ul>
           </div>
         </div>
       </div>
