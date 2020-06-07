@@ -10,16 +10,15 @@
           <div class="card-body">
             <h3 class="card-title mb-4 mt-4">Hallo {{ vorname }}</h3>
             <h4 class="card-text">
-              Dein Sternzeichen ist: <strong>{{sternzeichen}}</strong>
+              Dein Sternzeichen ist: <strong><a
+                  href="{{ url_for('sternzeichen_seite') }}?sternzeichen={{sternzeichen}}">{{sternzeichen}}</a></strong>
             </h4>
             <h4 class="card-text mb-5">
               Dein Element ist:
-              <a href="{{ url_for('element') }}?sternzeichen={{sternzeichen}}"
-                ><strong>{{element}}</strong></a
-              >
+              <a href="{{ url_for('element') }}?sternzeichen={{sternzeichen}}"><strong>{{element}}</strong></a>
             </h4>
-            <a class="btn btn-primary" href="{{ url_for('formular') }}" 
-              >Neue Abfrage</a> {# verlinkt auf die route /formular im jinja #}
+            <a class="btn btn-primary" href="{{ url_for('formular') }}">Neue Abfrage</a>
+            {# verlinkt auf die route /formular im jinja #}
           </div>
           <div class="card-footer text-muted">
             <p>Personen mit gleichem Sternzeichen {{countData}}</p>
