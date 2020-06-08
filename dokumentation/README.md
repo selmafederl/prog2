@@ -65,9 +65,7 @@ Wurde das Sternzeichen erkannt so wird dieses in den Listen liFeuer, liErde, liL
 
 Neben dem Element wird auf der ergbnis.html auch die Verklinung des Sternzeichens angezeigt, so dass der Nutzer auch mehr über sein Sternzeichen erfahren kann.
 
-Zu dem ist es über die Verlinkung über den Button "Neue Abfrage" auf der ergebnis.html möglich, auf die URL des Formulars zurück zu greifen und nochmals eine Abfrage vornehmen.
-
-
+Zu dem ist es über die Verlinkung über den Button "Neue Abfrage" auf der ergebnis.html möglich, auf die URL des Formulars zurück zu greifen und nochmals eine Abfrage vor zu nehmen.
 
 7. Gestaltung
 Die Website wurde mit Bootstrap-Paketen im Header ausgestattet und somit die Gestaltung für die Website gemacht
